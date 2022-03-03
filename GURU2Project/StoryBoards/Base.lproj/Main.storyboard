@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GURU2Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="300" translatesAutoresizingMaskIntoConstraints="NO" id="Zwq-Xk-88b">
+                                <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReocordTimer" translatesAutoresizingMaskIntoConstraints="NO" id="2SF-Ri-mNY">
+                                        <rect key="frame" x="0.0" y="0.0" width="57" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="2SF-Ri-mNY" secondAttribute="height" multiplier="1:1" id="baP-oS-Gxq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Setting" translatesAutoresizingMaskIntoConstraints="NO" id="2gw-4P-Qhl">
+                                        <rect key="frame" x="357" y="0.0" width="57" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="2gw-4P-Qhl" secondAttribute="height" multiplier="1:1" id="FnM-K6-8Vc"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="zMx-u0-q7I"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="HiN-8L-7it">
+                                <rect key="frame" x="0.0" y="778" width="414" height="84"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Calendar_Active" translatesAutoresizingMaskIntoConstraints="NO" id="Lby-a3-7pn">
+                                        <rect key="frame" x="0.0" y="0.0" width="66" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Lby-a3-7pn" secondAttribute="height" multiplier="1:1" id="MEi-hm-6Pf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Record_NonActive" translatesAutoresizingMaskIntoConstraints="NO" id="HUV-dW-IZL">
+                                        <rect key="frame" x="116" y="0.0" width="66" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="HUV-dW-IZL" secondAttribute="height" multiplier="1:1" id="S2c-h8-Q9d"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tip_NonActive" translatesAutoresizingMaskIntoConstraints="NO" id="Wro-Qd-81S">
+                                        <rect key="frame" x="232" y="0.0" width="66" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Wro-Qd-81S" secondAttribute="height" multiplier="1:1" id="HeZ-6j-MmD"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Community_NonActive" translatesAutoresizingMaskIntoConstraints="NO" id="rED-rB-4mE">
+                                        <rect key="frame" x="348" y="0.0" width="66" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="rED-rB-4mE" secondAttribute="height" multiplier="1:1" id="lMj-IA-qwh"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0h4-zx-BoC">
+                                <rect key="frame" x="0.0" y="84" width="414" height="694"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0h4-zx-BoC" secondAttribute="height" multiplier="207:347" id="6ZO-6D-fYK"/>
+                                </constraints>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zwq-Xk-88b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7eT-yA-YHA"/>
+                            <constraint firstItem="0h4-zx-BoC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="IgO-cK-kAm"/>
+                            <constraint firstItem="HiN-8L-7it" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Lbh-aA-U7p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zwq-Xk-88b" secondAttribute="trailing" id="N0T-W4-UKR"/>
+                            <constraint firstItem="HiN-8L-7it" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="O8c-Ut-DMw"/>
+                            <constraint firstItem="HiN-8L-7it" firstAttribute="top" secondItem="0h4-zx-BoC" secondAttribute="bottom" id="SGm-xe-e7W"/>
+                            <constraint firstItem="HiN-8L-7it" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="i1T-v1-tIl"/>
+                            <constraint firstItem="0h4-zx-BoC" firstAttribute="top" secondItem="Zwq-Xk-88b" secondAttribute="bottom" id="iEW-Cv-ZK2"/>
+                            <constraint firstItem="Zwq-Xk-88b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mJa-1E-0JW"/>
+                            <constraint firstItem="0h4-zx-BoC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vob-7m-7mC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containView" destination="0h4-zx-BoC" id="Oto-cA-wsE"/>
+                        <outletCollection property="tabMain" destination="Lby-a3-7pn" collectionClass="NSMutableArray" id="2a7-Sm-bIF"/>
+                        <outletCollection property="tabMain" destination="HUV-dW-IZL" collectionClass="NSMutableArray" id="BwN-Ez-Qhv"/>
+                        <outletCollection property="tabMain" destination="Wro-Qd-81S" collectionClass="NSMutableArray" id="JBE-GE-wMF"/>
+                        <outletCollection property="tabMain" destination="rED-rB-4mE" collectionClass="NSMutableArray" id="Le0-bI-jFo"/>
+                        <outletCollection property="tabSub" destination="2SF-Ri-mNY" collectionClass="NSMutableArray" id="QZh-dx-taE"/>
+                        <outletCollection property="tabSub" destination="2gw-4P-Qhl" collectionClass="NSMutableArray" id="0bs-L4-nAZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="360.86956521739131" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Calendar_Active" width="1081" height="1081"/>
+        <image name="Community_NonActive" width="1081" height="1081"/>
+        <image name="Record_NonActive" width="1081" height="1081"/>
+        <image name="ReocordTimer" width="1081" height="1081"/>
+        <image name="Setting" width="1081" height="1081"/>
+        <image name="Tip_NonActive" width="1081" height="1081"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
